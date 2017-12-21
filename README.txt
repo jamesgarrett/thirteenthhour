@@ -1,3 +1,3 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/jamesgarrett/pen/ZaqJLE.
+Theme for Thirteenth Hour Records Site
 
- A slider that uses 3D transform for that little something extra special.
+A 3D cube theme built for a simple website that animates on navigation in three dimensions
