@@ -7,11 +7,17 @@ var counter = 0;
 // if we are on events the Y rotation is 270
 
 $('.next').on('click', function(){
+  if (counter >= 360 || counter <= -360) {
+  	counter = 0;
+  }
   counter -= 90;
   var rotation = 'translateZ( -50vw ) rotateY( ' + counter + 'deg )';
   $('#cube').css('transform', rotation);
 });
 $('.previous').on('click', function(){
+  if (counter >= 360 || counter <= -360) {
+  	counter = 0;
+  }
   counter += 90;
   var rotation = 'translateZ( -50vw ) rotateY( ' + counter + 'deg )';
   $('#cube').css('transform', rotation);
@@ -129,4 +135,8 @@ $('#events').on('click', function(){
 	    	break
 	}
   
+});
+
+$('.info').on('click', function(){
+	$('#popUp').toggleClass('d-none');
 });

@@ -14,15 +14,17 @@
 <body>
   <nav>
     <ul>
-      <li class="logo"><a href="/">Thirtheenth Hour Records</a></li>
-      <li><a href="#" id="home">Home</a></li>
-      <li><a href="#" id="about">About</a></li>
-      <li><a href="#" id="releases">Releases</a></li>
-      <li><a href="#" id="events">Events</a></li>
-      <li><a href="ra"></a></li>
-      <li><a href="sc"></a></li>
-      <li><a href="fb"></a></li>
-      <li><a href="in"></a></li>
+      <li class="logo"><a href="#">13TH Hour Records</a></li>
+      <li class="d-none d-md-block"><a href="#" id="home">Home</a></li>
+      <li class="d-none d-md-block"><a href="#" id="about">About</a></li>
+      <li class="d-none d-md-block"><a href="#" id="releases">Releases</a></li>
+      <li class="d-none d-md-block"><a href="#" id="events">Events</a></li>
+      <span class="social">
+      <li><a href="ra"><img src="img/icons/ra.svg" alt="ra"></a></li>
+      <li><a href="soundcloud"><img src="img/icons/soundcloud.svg" alt="soundcloud"></a></li>
+      <li><a href="fb"></a><img src="img/icons/fb.svg" alt="fb"></li>
+      <li><a href="insta"></a><img src="img/icons/insta.svg" alt="insta"></li>
+      </span>
     </ul>
   </nav>
   <div class="wrap">
@@ -34,23 +36,24 @@
           </div>
         </figure>
         <figure class="back">
+          <button class="info"><img src="img/icons/info.svg" alt=""></button>
+            <div id="popUp" class="d-none col-md-6 col-sm-12">
+              <h4>13TH001 - Release No. 1</h4>
+              <p class="description">####</p>
+            </div>
           <div class="col-md-10 offset-md-1 releases">
             <article>
               <h4 class="release-title">13TH001 - Release No. 1</h4>
               <img src="img/releases/13TH001.png" alt="Release 1 Img" class="release-img">
-              <div class="read-more">
-                <h4>13TH001 - Release No. 1</h4>
-                <p class="description">####</p>
-              </div>
             </article>
-            <article>
+<!--             <article class="hidden">
               <h4 class="release-title">13TH002 - Release No. 2</h4>
               <img src="img/releases/13TH002.png" alt="Release 1 Img" class="release-img">
-              <div class="read-more">
+              <div class="read-more hidden">
                 <h4>13TH002 - Release No. 2</h4>
                 <p class="description">####</p>
               </div>
-            </article>
+            </article> -->
           </div>
         </figure>
         <figure class="right">
@@ -86,9 +89,10 @@
       </div>
     </section>
   </div>
-  <div class="button-wrap">
-    <button class="previous"><</button>
-    <button class="next">></button>
+
+  <div class="pagination">
+    <button class="previous"><img src="img/icons/previous.svg" alt=""></button>
+    <button class="next"><img src="img/icons/next.svg" alt=""></button>
   </div>
 
 </body>
